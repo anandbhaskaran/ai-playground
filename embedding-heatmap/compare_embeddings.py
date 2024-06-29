@@ -39,13 +39,11 @@ def compare_embeddings(word1, word2):
     return x['score']
 
 
+# Get embedding-heatmap for a word.
 def get_embedding(word):
-    from langchain_openai import OpenAIEmbeddings
-
-    # Get embedding-heatmap for a word.
     embedding_function = OpenAIEmbeddings()
-    vector = embedding_function.embed_query("apple")
-    print(f"Vector for 'apple': {vector}")
+    vector = embedding_function.embed_query(word)
+    print(f"Vector for {word}: {vector}")
     print(f"Vector length: {len(vector)}")
 
 if __name__ == "__main__":
