@@ -1,0 +1,15 @@
+[project]
+name = "notebook1"
+version = "0.1.0"
+dependencies = [
+    "jupyter",
+    "ipykernel",
+    "langchain",
+    "dotenv>=0.9.9",
+    "langgraph>=0.3.29",
+    "langchain-openai>=0.3.12",
+    "langchain-community>=0.3.21",
+]
+
+[tool.uv]
+virtualenvs.in-project = true
