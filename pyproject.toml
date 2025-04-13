@@ -1,0 +1,21 @@
+[project]
+name = "ai-agent-persistance-and-streaming"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jupyter",
+    "ipykernel",
+    "langchain",
+    "dotenv>=0.9.9",
+    "langgraph>=0.3.29",
+    "langchain-openai>=0.3.12",
+    "langchain-community>=0.3.21",
+    "aiosqlite>=0.21.0",
+    "notebook>=7.4.0",
+    "langgraph-checkpoint-sqlite>=2.0.6",
+]
+
+[tool.uv]
+virtualenvs.in-project = true

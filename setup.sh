@@ -27,6 +27,8 @@ select dir in $notebook_dirs; do
     python -m ipykernel install --user --name "$env_name" --display-name "Python ($env_name)"
 
     echo "✅ Environment setup complete for $env_name"
+    echo "➡️ To activate it, run:"
+    echo "cd $dir && source .venv/bin/activate"
     break
   else
     echo "❗ Invalid selection"
